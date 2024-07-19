@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favour's Js Calculator</title>
+    <script src="script.js"></script>
+
+
+    <style>
+        *{
+            text-align: center;
+        }
+        input{
+            margin-left: 10px;
+        }
+        .result{
+            margin-left: 16px;
+        }
+        .operators{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 60px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box">
+    <label for="val1">Value 1:</label>
+    <input id="val1" type="number" style="margin-bottom: 10px;">
+    <br>
+    <label for="val2">Value 2:</label>
+    <input id="val2" type="number"><br>
+    </div>
+    <div class="operators">
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiply()">*</button>
+        <button onclick="divide()">/</button> 
+    <br>
+    </div>
+    <div class="box" id="box">
+    <label for="result">Result:</label>
+    <input id="result" class="result" type="text">
+    </div>
+</body>
+</html>
