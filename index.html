@@ -8,32 +8,59 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
         *{
             text-align: center;
+            font-family: "Figtree",sans-serif;
         }
         input{
             margin-left: 10px;
+            border-radius: 5px;
+            border: none;
         }
         .result{
             margin-left: 16px;
         }
         .operators{
             margin-top: 5px;
-            margin-bottom: 5px;
-            margin-left: 60px;
+            margin-bottom: 25px;
+            margin-left: 50px;
+            display: flex;
+            gap: 10px;
+        }
+        button{
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: rgb(113, 113, 250);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 200px;
+            width: fit-content;
+            margin: 100px auto;
+            border-radius: 10px;
         }
     </style>
 
 
 </head>
 <body>
-    <div class="box">
+    <div class="container">
     <label for="val1">Value 1:</label>
     <input id="val1" type="number" style="margin-bottom: 10px;">
     <br>
     <label for="val2">Value 2:</label>
     <input id="val2" type="number"><br>
-    </div>
     <div class="operators">
         <button onclick="add()">+</button>
         <button onclick="subtract()">-</button>
@@ -44,6 +71,7 @@
     <div class="box" id="box">
     <label for="result">Result:</label>
     <input id="result" class="result" type="text">
+    </div>
     </div>
 </body>
 </html>
