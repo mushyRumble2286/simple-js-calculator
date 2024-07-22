@@ -4,8 +4,7 @@ function add(){
     const input2 = document.getElementById("val2");
     const inputValue2 = Number(input2.value);
     let x = (inputValue1 + inputValue2);
-    var y = document.getElementById("box");
-    y.querySelector(".result").value = x;
+    document.getElementById("result").value = x;
 }
 
 function subtract(){
@@ -14,9 +13,9 @@ function subtract(){
     const input2 = document.getElementById("val2");
     const inputValue2 = Number(input2.value);
     let x = (inputValue1 - inputValue2);
-    var y = document.getElementById("box");
-    y.querySelector(".result").value = x;
+    document.getElementById("result").value = x;
 }
+
 
 function multiply(){
     const input1 = document.getElementById("val1");
@@ -24,8 +23,7 @@ function multiply(){
     const input2 = document.getElementById("val2");
     const inputValue2 = Number(input2.value);
     let x = (inputValue1 * inputValue2);
-    var y = document.getElementById("box");
-    y.querySelector(".result").value = x;
+    document.getElementById("result").value = x;
 }
 
 function divide(){
@@ -34,7 +32,7 @@ function divide(){
     const input2 = document.getElementById("val2");
     const inputValue2 = Number(input2.value);
     let x = (inputValue1 / inputValue2);
-    var y = document.getElementById("box");
-    y.querySelector(".result").value = x;
+    document.getElementById("result").value = x;
 }
+
 
